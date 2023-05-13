@@ -22,7 +22,7 @@ int main()
     printf(" (%d) :",i+1);
     printf(" (%d)\t: ",/*nsec?*/inp[i]/*:0*/);
     printf(" (%d)\t: ",min(cont+inp[i],oprt));
-    if((x=cont+inp[i]-oprt)>0)
+    if((x=cont+inp[i]-oprt)>0){
     if(x>cap)
     {
     cont=cap;
@@ -32,6 +32,7 @@ int main()
     {
     cont=x;
     dr=0;
+    }
     }
     else
     cont=0;
